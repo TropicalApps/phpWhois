@@ -24,7 +24,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "phpwhois/phpwhois": "dev-master"
     },
     "suggest": {
         "lib-openssl": "*"

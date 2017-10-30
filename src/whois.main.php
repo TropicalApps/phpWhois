@@ -48,8 +48,8 @@ class Whois extends WhoisClient
 	/*
 	 * Constructor function
 	 */
-	function Whois()
-		{
+	public function __construct()
+	{
 		// Load DATA array
 		@require('whois.servers.php');
 
@@ -60,6 +60,11 @@ class Whois extends WhoisClient
 
 		// Set version
 		$this->VERSION = sprintf("phpWhois v%s-%s", $this->CODE_VERSION, $this->DATA_VERSION);
+	}
+
+	function Whois()
+		{
+		self::__construct();
 		}
 
 	/*
